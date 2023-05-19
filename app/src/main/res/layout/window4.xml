@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Window4_Activity"
+    android:background="#CF75F8">
+
+
+    <View
+        android:id="@+id/w4_barra"
+        android:layout_width="410dp"
+        android:layout_height="87dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/w4_home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@+id/w4_barra"
+        app:layout_constraintStart_toEndOf="@+id/w4_menu"
+        app:layout_constraintTop_toTopOf="@+id/w4_barra"
+        app:layout_constraintVertical_bias="0.518"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/w4_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:src="@drawable/men_"
+        app:layout_constraintBottom_toBottomOf="@+id/w4_barra"
+        app:layout_constraintStart_toStartOf="@+id/w4_barra"
+        app:layout_constraintTop_toTopOf="@+id/w4_barra"
+        app:layout_constraintVertical_bias="0.518"
+        android:onClick="GoMenu"/>
+
+    <ImageView
+        android:id="@+id/w4_calenday"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/calendary"
+        app:layout_constraintBottom_toBottomOf="@+id/w4_barra"
+        app:layout_constraintEnd_toEndOf="@+id/w4_barra"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toEndOf="@+id/w4_home"
+        app:layout_constraintTop_toTopOf="@+id/w4_barra"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/W4_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="FIN HEALD"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="383dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/W4_Title" />
+
+    <EditText
+        android:id="@+id/W4_acounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACOUNTS"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/w4_acountId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000000000-01"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/W4_acounts"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0,00"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <ImageButton
+        android:id="@+id/w4_incomes"
+        android:layout_width="175dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/cuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        android:onClick="ClickGoIncomesW4"/>
+
+    <ImageButton
+        android:id="@+id/w4_outlays"
+        android:layout_width="175dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        android:onClick="ClickGoOutlyesW4"
+        />
+
+    <ImageView
+        android:id="@+id/w4_outlaysIcon"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/gasto"
+        app:layout_constraintBottom_toBottomOf="@+id/w4_outlays"
+        app:layout_constraintEnd_toEndOf="@+id/w4_outlays"
+        app:layout_constraintTop_toTopOf="@+id/w4_outlays"
+        android:onClick="ClickGoOutlyesW4"/>
+
+    <ImageView
+        android:id="@+id/w4_incomesIcon"
+        android:layout_width="80dp"
+        android:layout_height="63dp"
+        android:src="@drawable/ingreso"
+        app:layout_constraintBottom_toBottomOf="@+id/w4_incomes"
+        app:layout_constraintEnd_toEndOf="@+id/w4_incomes"
+        app:layout_constraintTop_toTopOf="@+id/w4_incomes"
+        app:layout_constraintVertical_bias="0.588"
+        android:onClick="ClickGoIncomesW4"/>
+
+    <TextView
+        android:id="@+id/w4_incomesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Incomes"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/w4_incomes"
+        app:layout_constraintStart_toStartOf="@+id/w4_incomes"
+        app:layout_constraintTop_toTopOf="@+id/w4_incomes"
+        app:layout_constraintVertical_bias="0.49"
+        android:onClick="ClickGoIncomesW4"/>
+
+    <TextView
+        android:id="@+id/w4_outlaysText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Outlyes"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/w4_outlays"
+        app:layout_constraintStart_toStartOf="@+id/w4_outlays"
+        app:layout_constraintTop_toTopOf="@+id/w4_outlays"
+        android:onClick="ClickGoOutlyesW4"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="326dp"
+        android:layout_height="272dp"
+        app:layout_constraintBottom_toTopOf="@+id/w4_barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w4_outlays"
+        app:srcCompat="@drawable/grafica" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

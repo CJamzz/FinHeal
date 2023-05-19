@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Window6_Activity"
+    android:background="#FF4949">
+
+    <TextView
+        android:id="@+id/W6_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="FIN HEALD"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/w6_barra"
+        android:layout_width="410dp"
+        android:layout_height="87dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/w6_home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@+id/w6_barra"
+        app:layout_constraintStart_toEndOf="@+id/w6_menu"
+        app:layout_constraintTop_toTopOf="@+id/w6_barra"
+        app:layout_constraintVertical_bias="0.518"
+        tools:ignore="MissingConstraints"
+        android:onClick="clickGoHomeW6"
+        />
+
+    <ImageView
+        android:id="@+id/w6_menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:src="@drawable/men_"
+        app:layout_constraintBottom_toBottomOf="@+id/w6_barra"
+        app:layout_constraintStart_toStartOf="@+id/w6_barra"
+        app:layout_constraintTop_toTopOf="@+id/w6_barra"
+        app:layout_constraintVertical_bias="0.518"
+        android:onClick="GoMenu"/>
+
+    <ImageView
+        android:id="@+id/w6_calenday"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/calendary"
+        app:layout_constraintBottom_toBottomOf="@+id/w6_barra"
+        app:layout_constraintEnd_toEndOf="@+id/w6_barra"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toEndOf="@+id/w6_home"
+        app:layout_constraintTop_toTopOf="@+id/w6_barra"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <ImageButton
+        android:id="@+id/w6_incomes"
+        android:layout_width="407dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/W6_Title" />
+
+    <ImageView
+        android:id="@+id/w6_incomesIcon"
+        android:layout_width="80dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="240dp"
+        android:src="@drawable/gasto"
+        app:layout_constraintBottom_toBottomOf="@+id/w6_incomes"
+        app:layout_constraintEnd_toEndOf="@+id/w6_incomes"
+        app:layout_constraintTop_toTopOf="@+id/w6_incomes"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/w6_incomesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:text="Outlyes"
+        android:textColor="#000000"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/w6_incomes"
+        app:layout_constraintStart_toStartOf="@+id/w6_incomes"
+        app:layout_constraintTop_toTopOf="@+id/w6_incomes"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <ImageView
+        android:id="@+id/w6_salaryIcon"
+        android:layout_width="95dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w6_incomes"
+        app:srcCompat="@drawable/salario"
+        android:onClick="GoForm"/>
+
+    <TextView
+        android:id="@+id/w6_LoanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Loan"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/w6_salaryIcon"
+        app:layout_constraintTop_toBottomOf="@+id/w6_incomes"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoForm"/>
+
+    <ImageView
+        android:id="@+id/W6_ahorro"
+        android:layout_width="80dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/w6_LoanText"
+        app:layout_constraintTop_toBottomOf="@+id/w6_incomes"
+        app:srcCompat="@drawable/ahorro"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoForm"/>
+
+    <TextView
+        android:id="@+id/w6_debtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Debt"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/W6_ahorro"
+        app:layout_constraintTop_toBottomOf="@+id/w6_incomes"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoForm"/>
+
+    <ImageView
+        android:id="@+id/w6_regaloIcon"
+        android:layout_width="80dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w6_salaryIcon"
+        app:srcCompat="@drawable/regalo"
+        android:onClick="GoForm"/>
+
+    <TextView
+        android:id="@+id/w6_regaloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Present"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/w6_regaloIcon"
+        app:layout_constraintTop_toBottomOf="@+id/w6_salaryIcon"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoForm"/>
+
+    <ImageView
+        android:id="@+id/w6_anotherIcon"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/w6_TranportIcon"
+        app:srcCompat="@drawable/m_s"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoForm"/>
+
+    <TextView
+        android:id="@+id/w6_anotherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Another"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/w6_anotherIcon"
+        app:layout_constraintTop_toBottomOf="@+id/w6_TranportIcon"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoForm"/>
+
+    <ImageView
+        android:id="@+id/w6_estydioIcon"
+        android:layout_width="87dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w6_regaloIcon"
+        app:srcCompat="@drawable/estudio"
+        android:onClick="GoForm"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Study"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/w6_estydioIcon"
+        app:layout_constraintTop_toBottomOf="@+id/w6_regaloIcon"
+        android:onClick="GoForm"/>
+
+    <ImageView
+        android:id="@+id/w6_TranportIcon"
+        android:layout_width="66dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/w6_regaloText"
+        app:layout_constraintTop_toBottomOf="@+id/W6_ahorro"
+        app:srcCompat="@drawable/transporte"
+        tools:ignore="MissingConstraints"
+        android:onClick="GoForm"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Transport"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/w6_TranportIcon"
+        app:layout_constraintTop_toBottomOf="@+id/W6_ahorro"
+        android:onClick="GoForm"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

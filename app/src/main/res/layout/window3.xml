@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Window3_Activity">
+
+    <ImageView
+        android:id="@+id/w3_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="421dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whatsapp_image_2023_03_25_at_9_31_22_am"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/w3_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#1DFBFBFB"
+        android:text="LogIN"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/w3_signup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w3_fondo"
+        tools:ignore="MissingConstraints"
+        android:onClick="ClickLoginW3"/>
+
+    <Button
+        android:id="@+id/w3_signup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#8C25CD"
+        android:onClick="ClickSignW1"
+        android:padding="10dp"
+        android:text="signup"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w3_fondo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/W3_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Thank you for signing up for FinHeald"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w3_login"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/w3_name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/W3_welcome"
+        tools:ignore="MissingConstraints"/>
+
+    <EditText
+        android:id="@+id/w3_email"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w3_name"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/w3_Password"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w3_email"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/w3_LoginInitializate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:backgroundTint="#8C25CD"
+        android:padding="10dp"
+        android:text="SignUp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w3_Password"
+        tools:ignore="MissingConstraints"
+        android:onClick="ClickSignupW3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/w2_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="421dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whatsapp_image_2023_03_25_at_9_31_22_am"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/w2_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#8C25CD"
+        android:padding="10dp"
+        android:text="LogIN"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/w2_signup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w2_fondo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/w2_signup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#1DFBFBFB"
+        android:text="signup"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w2_fondo"
+        tools:ignore="MissingConstraints"
+        android:onClick="ClickSignupW2"/>
+
+    <TextView
+        android:id="@+id/W2_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Welcome to FinHeald"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w2_login"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/w2_email"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/W2_welcome"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/w2_Password"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w2_email"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/w2_LoginInitializate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#8C25CD"
+        android:padding="10dp"
+        android:text="LogIN"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w2_Password"
+        tools:ignore="MissingConstraints"
+        android:onClick="ClickLoginW2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
